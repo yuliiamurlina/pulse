@@ -38,12 +38,18 @@
             border: none
     &__content
         margin-top: 60px
+        justify-content: space-between
+        flex-wrap: wrap
+        display: none
+        &_active
+            display: flex
     &-item
         padding: 20px
         width: 303px
         min-height: 432px
         border: 2px solid #E8E8E8
         overflow: hidden
+        margin-bottom: 19px
         &__img
             display: block
             margin: 0 auto
@@ -70,6 +76,7 @@
             text-decoration-line: underline
             color: $main_color
             margin: 10px auto 38px
+            text-transform: uppercase
             &:hover
                 color: $main_color
                 transform: scale(1.2)
@@ -118,11 +125,10 @@
             width: 50%
             transform: translateX(0%)
             transition: 0.5s all
-            padding-left: 20px
-
             &_active
                 transform: translateX(-100%)
                 transition: 0.5s all
+                padding-left: 20px
             li
                 font-weight: 300
                 font-size: 14px
@@ -139,3 +145,16 @@
                     background-color: $main_color
                     left: -14px
                     top: 8px
+        &__back
+            display: block
+            font-weight: 500
+            font-size: 14px
+            text-align: center
+            text-decoration-line: underline
+            color: $main_color
+            margin: 10px auto 38px
+            text-transform: uppercase
+            position: absolute
+            bottom: -15px
+            left: 50%
+            transform: translateX(-50%)
