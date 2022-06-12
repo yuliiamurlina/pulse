@@ -1,0 +1,40 @@
+.catalog
+    height: 1103px
+    padding: 10px 0 100px
+    &__title
+        font-weight: 400
+        font-size: 30px
+        text-align: center
+        text-transform: uppercase
+        color: #0D0D0D
+    &__tabs
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        width: 733px
+        margin: 46px auto 0
+        list-style-type: none
+    &__tab
+        padding: 10px 30px
+        width: 220px
+        height: 50px
+        background: rgba(0, 0, 0, 0.0001)
+        border: 2px solid #D0D0D0
+        font-weight: 400
+        font-size: 18px
+        text-align: center
+        text-transform: uppercase
+        color: #6B6B6B
+        transform: skew(-25deg)
+        cursor: pointer
+        &:hover
+            box-shadow: 3px 3px 15px #a80202
+            transition: .5s all
+        div
+            transform: skew(25deg)
+        &_active
+            background: $main_color
+            color: $white
+            border: none
+    &__content
+        margin-top: 60px
