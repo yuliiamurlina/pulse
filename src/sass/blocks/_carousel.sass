@@ -1,0 +1,15 @@
+.carousel
+    min-height: 742px
+    padding: 80px 0
+    &__inner
+        position: relative
+        width: 750px
+        margin: 0 auto
+    .slick-prev, .slick-next
+        top: 50%
+        transform: translateY(-50%)
+        left: -66px
+        @include arrow
+    .slick-next
+        left: auto
+        right: -66px
