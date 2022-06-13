@@ -122,12 +122,23 @@
     .reviews
         margin: 0 auto
         &-item
-
             &__img
                 width: 140px
                 height: 140px
             &__text
                 width: 340px
+    .footer
+        height: 300px
+        &__map
+            height: 300px
+        &__info
+            height: 200px
+            padding: 20px
+        &__addr
+            font-size: 18px
+        &__phone
+            font-size: 16px
+
 // mobile phone
 @media ( max-width: 576px )
     .promo
@@ -216,3 +227,25 @@
             &__text
                 width: 300px
                 text-align: center
+    .footer
+        &__info
+            left: 0
+            transform: translateX(0%)
+            height: 100%
+            width: 180px
+
+        &__addr
+            font-size: 13px
+            text-align: left
+        &__phone
+            font-size: 16px
+            text-align: left
+        &__social
+            display: flex
+            flex-direction: column
+            text-align: left
+            margin-top: 10px
+            &-item
+                padding: 3px 40px 0px 13px
+                margin-right: 93px
+                margin-bottom: 10px
