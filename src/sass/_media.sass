@@ -59,6 +59,15 @@
             &__button
                 width: 120px
                 margin-left: 20px
+    .reviews
+        padding: 40px 10px 0
+        &__title
+            font-size: 27px
+        &-item
+            justify-content: center
+            &__text
+                width: 500px
+
 // small tablet
 @media ( max-width: 768px )
     .promo
@@ -110,7 +119,15 @@
             &__button
                 width: 90px
                 margin-left: 15px
+    .reviews
+        margin: 0 auto
+        &-item
 
+            &__img
+                width: 140px
+                height: 140px
+            &__text
+                width: 340px
 // mobile phone
 @media ( max-width: 576px )
     .promo
@@ -181,3 +198,21 @@
             &__button
                 width: 90px
                 margin-left: 50px
+    .reviews
+        &__title
+            font-size: 25px
+        &-item
+            flex-direction: column
+            &__img
+                display: block
+                width: 130px
+                height: 130px
+                margin: 0 auto 10px
+            &__info
+                padding: 5px
+                text-align: center
+
+                margin: 0 auto
+            &__text
+                width: 300px
+                text-align: center
